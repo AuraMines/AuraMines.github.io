@@ -1,58 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: #0d131c;
+    
+    
+}
+
+
+main {
+    
+    padding-bottom: 548px;
+    
+    
+}
+
+main div {
+    color: green;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background: #f0f0f0;
+    background-color: #16202d;
+    padding-bottom: 30px;
 }
 
-#money {
-    display: flex;
-    align-items: center;
-}
+header h1 {
+    color: #dd234b;
+    text-shadow: 2px 1px 1px #b0193a;
+    font-size: 50pt;
+    text-align: center;
 
-#saldo p {
-    margin: 0;
 }
-
-.botoes, .botao2, .botaoJogo {
-    background-color: #007bff;
+.botoes {
+    background-color: #dd234b;
     color: white;
-    border: none;
+    border:solid 2px #c91b41;
     padding: 10px;
-    margin: 5px;
-    cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
+    font-size: 10pt;
 }
 
 .botao2 {
-    background-color: #28a745;
+    background-color: #2283f6;
+    border: solid 2px #2173d8;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 10pt;
 }
 
-.botaoJogo {
-    background-color: #dc3545;
+.botoes:hover {
+    background-color: #c91b41;
+}
+.botao2:hover{
+    background-color: #2173d8;
 }
 
-input[type="number"] {
-    padding: 5px;
+#money{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 8%;
+    left: 90%;
+    text-align: center;
+    
+}
+#money div {
+    margin-bottom: 10px;
+    font-size: 15pt;
+}
+#displayDep {
+    display: none;
+    background-color: #16202d;
+    padding: 10px;
+    padding-bottom: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 29%;
+    left: 90%;
+    text-align: center;
+}
+
+#displayDep button {
+    padding: 2px;
+    width: 80px;
     margin: 5px;
+    
+
+}
+
+#displayDep #row1 {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#displayDep #row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#displayDep #confirm {
+    
+    padding: 6px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 78%;
+    left: 49%;
+}
+
+#displayDep p {
+    margin: 2px;
 }
 
 #tabuleiro {
-    margin: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 59%;
+    left: 50%;
+
+}
+
+#tabuleiro .tbrow {
+    filter: blur(4px);
+    
 }
 
 .tbrow {
+    margin: 15px;
+    align-items: center;
+}
+
+.botaoJogo {
+    background-color: #2773d0;
+    box-shadow: 0px 5px 0px #1b4881;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    border: 2px solid #1b4881;
+}
+
+
+
+.botaoJogo svg {
+    width: 100%;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+section {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 20%;
+    text-align: center;
+}
+
+main section span {
+    text-align: right;
+}
+
+section div .botao2 {
+    padding: 2px;
+}
+
+section div {
+    margin: 10px;
+}
+
+#inp {
+    padding: 5px;
+    background-color: #16202d;
+    border: 2px solid #0d131c;
+    color: white;
+    font-weight: bold;
+}
+
+#inp:focus {
+    outline: none;
+    border: 2px solid #1b283c;
+}
+#inp:hover {
+    border: 2px solid #1b283c;
+    
+}
+
+#tabuleiro h2 {
+    color: white;
+    font-size: 15pt;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+section div div {
+    display: flex; 
+    flex-direction: column;
+    
+}
+section div {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+}
+section div div button{
+    margin: 2px;
+    
+}
+
+#sect {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 75%;
 }
 
 .boxes {
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin: 5px;
-    border-radius: 5px;
+    background-color: #16202d;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+#lucro p{
+    color: rgb(12, 165, 12);
+}
+#hits p {
+    color: #2283f6;
 }
